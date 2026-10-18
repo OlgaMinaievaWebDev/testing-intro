@@ -1,7 +1,3 @@
-function notImplemented() {
-  throw new Error('Корзина ещё не реализована. Сначала прочитайте тесты.');
-}
-
 function addToCart(cart, product, quantity) {
   if (quantity <= 0) throw RangeError('quantity must be more then zero');
   const existingProduct = cart.find((item) => item.id === product.id);
